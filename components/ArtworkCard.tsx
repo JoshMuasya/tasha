@@ -101,7 +101,7 @@ export const ArtworkCard = ({
 
                 {/* Overlay */}
                 <motion.div
-                    className="absolute inset-0 bg-linear-to-t from-foreground/80 via-foreground/30 to-transparent"
+                    className="absolute inset-0 bg-linear-to-t from-charcoal/80 via-charcoal/40 to-transparent"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: isHovered ? 1 : 0 }}
                     transition={{ duration: 0.3 }}
@@ -118,10 +118,10 @@ export const ArtworkCard = ({
                     }}
                     transition={{ duration: 0.35, ease: easeOut }}
                 >
-                    <p className="text-xs tracking-widest uppercase text-primary-foreground/70 mb-2">
+                    <p className="text-xs tracking-widest uppercase text-accent mb-2">
                         {category}
                     </p>
-                    <h3 className="font-display text-xl text-primary-foreground">
+                    <h3 className="font-display text-xl text-popover">
                         {title}
                     </h3>
                 </motion.div>
